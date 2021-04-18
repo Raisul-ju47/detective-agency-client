@@ -1,7 +1,7 @@
 ========It takes time to show the images on the updatable sections (service, detective, testimonial) so please, Have patience!!=======
 
 
-Website Name: Detective Agency
+Website Name: "Detective Agency". Provides Special Detective and Investigation services.
 This website is created with MERN (MongoDB, Express.js, React.js & Node.js)
 
 Homepage has several sections such as=> 
