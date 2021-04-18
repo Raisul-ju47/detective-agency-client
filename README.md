@@ -15,6 +15,7 @@ Homepage has several sections such as=>
 
 Special Features: 1.Animation on Service Section. 
                  2.Dark Theme overall the website.
+                 3.Responsive Home page.
 
 
 ============================================THANKS==========================================
