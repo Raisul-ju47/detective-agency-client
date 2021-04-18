@@ -1,0 +1,7 @@
+.blogs .card{
+    border: 0;
+}
+.blogs .card-header{
+    border: 0;
+    background-color: transparent;
+}
