@@ -9,13 +9,16 @@ import {
   faGripHorizontal,
   faUsers,
   faPlus,
+  faShoppingCart,
+  faClipboardList,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
+import { faCommentDots, faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import { UserContext } from "../../../App";
 import { useState } from "react";
 
 const Sidebar = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const { value2 } = useContext(UserContext);
+  const [loggedInUser, setLoggedInUser] = value2;
   const [isDetective, setIsDetective] = useState(false);
 
   useEffect(() => {
@@ -34,19 +37,18 @@ const Sidebar = () => {
       style={{ height: "100vh" }}
     >
       <ul className="list-unstyled">
-        {
-          <li>
-          <Link
-            to="/dashboard/mainDashboard"
-            className="text-white"
-            style={{ textDecoration: "none" }}
-          >
-            <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
-          </Link>
-        </li>
-        }
-        { isDetective &&
+        {isDetective ? (
           <div>
+            <li>
+              <Link
+                to="/dashboard/mainDashboard"
+                className="text-white"
+                style={{ textDecoration: "none" }}
+              >
+                <FontAwesomeIcon icon={faGripHorizontal} />{" "}
+                <span>Dashboard</span>
+              </Link>
+            </li>
             <li>
               <Link
                 to="/addAdmin"
@@ -85,7 +87,7 @@ const Sidebar = () => {
             </li>
             <li>
               <Link
-                to="/doctor/setting"
+                to="/manageService"
                 className="text-white"
                 style={{ textDecoration: "none" }}
               >
@@ -93,7 +95,38 @@ const Sidebar = () => {
               </Link>
             </li>
           </div>
-        }
+        ) : (
+          <div>
+            <li>
+              <Link
+                to="/service/:id"
+                className="text-white"
+                style={{ textDecoration: "none" }}
+              >
+                <FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/bookingList"
+                className="text-white"
+                style={{ textDecoration: "none" }}
+              >
+                <FontAwesomeIcon icon={faClipboardList} />{" "}
+                <span>Booking list</span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/addReview"
+                className="text-white"
+                style={{ textDecoration: "none" }}
+              >
+                <FontAwesomeIcon icon={faCommentDots} /> <span>Review</span>
+              </Link>
+            </li>
+          </div>
+        )}
       </ul>
       <div>
         <Link to="/" className="text-white" style={{ textDecoration: "none" }}>

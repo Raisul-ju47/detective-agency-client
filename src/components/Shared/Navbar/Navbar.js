@@ -50,16 +50,6 @@ const Navbar = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link
-                style={{ textDecoration: "none" }}
-                to="/appointment"
-              >
-                <a class="nav-link ms-5 text-white" href="#">
-                  Make Appointment
-                </a>
-              </Link>
-            </li>
-            <li class="nav-item">
               <a class="nav-link ms-5 text-white" href="#">
                 Admin
               </a>

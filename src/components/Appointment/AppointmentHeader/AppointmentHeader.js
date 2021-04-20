@@ -3,8 +3,10 @@ import spy from '../../../images/spy.jpg';
 import Calendar from 'react-calendar';
 import { useState } from "react";
 import 'react-calendar/dist/Calendar.css';
+import BookAppointment from "../BookAppointment/BookAppointment";
+import BookingCard from "../BookindCard/BookingCard";
 
-const AppointmentHeader = ({handleDateChange}) => {
+const AppointmentHeader = ({handleDateChange, date}) => {
 
     
   return (
@@ -17,12 +19,7 @@ const AppointmentHeader = ({handleDateChange}) => {
       />
       </div>
       <div className="col-md-4">
-        <img
-          className="img-fluid"
-          style={{ width: "500px" }}
-          src={spy}
-          alt=""
-        />
+        <BookingCard date={date} />
       </div>
     </main>
   );

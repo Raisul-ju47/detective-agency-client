@@ -15,7 +15,8 @@ const containerStyle = {
 };
 
 const Dashboard = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const {value2} = useContext(UserContext);
+    const [loggedInUser, setLoggedInUser] = value2;
     const [selectedDate, setSelectedDate] = useState(new Date());
     const [appointments, setAppointments] = useState([]);
 

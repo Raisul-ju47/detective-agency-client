@@ -13,7 +13,7 @@ const AllCustomers = () => {
 
   return (
     <section>
-      <div className="container-fluid row ">
+      <div className="container-fluid row">
         <Sidebar />
         <div
           className="col-md-10 p-4 pr-5"

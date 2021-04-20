@@ -7,7 +7,8 @@ import { useHistory, useLocation } from "react-router-dom";
 import LoginBg from '../../../images/loginBg.png';
 
 const Login = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const {value2} = useContext(UserContext);
+  const [loggedInUser, setLoggedInUser] = value2;
   const history = useHistory();
   const location = useLocation();
   const { from } = location.state || { from: { pathname: "/" } };

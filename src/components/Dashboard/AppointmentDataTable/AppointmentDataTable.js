@@ -12,19 +12,13 @@ const AppointmentDataTable = ({ appointments }) => {
             Name
           </th>
           <th className="text-white" scope="col">
-            Gender
-          </th>
-          <th className="text-white" scope="col">
-            Age
-          </th>
-          <th className="text-white" scope="col">
-            Weight
-          </th>
-          <th className="text-white" scope="col">
-            Phone
-          </th>
-          <th className="text-white" scope="col">
             Email
+          </th>
+          <th className="text-white" scope="col">
+            Service
+          </th>
+          <th className="text-white" scope="col">
+            Appointment Date
           </th>
         </tr>
       </thead>
@@ -33,11 +27,9 @@ const AppointmentDataTable = ({ appointments }) => {
           <tr>
             <td className="text-white">{index + 1}</td>
             <td className="text-white">{appointment.name}</td>
-            <td className="text-white">{appointment.gender}</td>
-            <td className="text-white">{appointment.age}</td>
-            <td className="text-white">{appointment.weight}KG</td>
-            <td className="text-white">{appointment.phone}</td>
-            <td className="text-white">{appointment.email}</td>
+            <td className="text-white">{appointment.email}</td>            
+            <td className="text-white">{appointment.service}</td>
+            <td className="text-white">{appointment.appointmentDate}</td>
           </tr>
         ))}
       </tbody>

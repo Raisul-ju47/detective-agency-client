@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import './Services.css';
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
+import { UserContext } from "../../../App";
 
 const Services = () => {
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/services")
-    .then((res) => res.json())
-    .then((data) => setServices(data));
-  }, [])
+  const { value1 } = useContext(UserContext);
+  const [services, setServices] = value1;
 
   return (
     <section className="services-container">
