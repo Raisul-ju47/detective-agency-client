@@ -13,7 +13,7 @@ const BookingCard = ({ date }) => {
   
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${id}`)
+    fetch(`https://safe-chamber-06850.herokuapp.com/service/${id}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -39,7 +39,7 @@ const BookingCard = ({ date }) => {
     formData.append("email", info.email);
     
 
-    fetch("http://localhost:5000/addAppointment", {
+    fetch("https://safe-chamber-06850.herokuapp.com/addAppointment", {
       method: "POST",
       body: formData,
     })

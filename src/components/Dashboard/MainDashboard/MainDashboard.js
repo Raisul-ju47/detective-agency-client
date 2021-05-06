@@ -7,7 +7,7 @@ const MainDashboard = () => {
   const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/appointments")
+    fetch("https://safe-chamber-06850.herokuapp.com/appointments")
       .then((res) => res.json())
       .then((data) => setAppointments(data));
   }, []);

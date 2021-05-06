@@ -6,7 +6,7 @@ const FeaturedService = () => {
   return (
     <section className="featured-service">
       <div className="container">
-        <div className="row d-flex align-items-center">
+        <div className="row d-flex align-items-center featured">
           <div className="col-md-7 align-self-center text-white">
             <h1>Exceptional Success rate</h1>
             <p className="my-5">

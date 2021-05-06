@@ -22,7 +22,7 @@ const Sidebar = () => {
   const [isDetective, setIsDetective] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/isDetective", {
+    fetch("https://safe-chamber-06850.herokuapp.com/isDetective", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email: loggedInUser.email }),

@@ -33,7 +33,7 @@ const Detectives = () => {
   const [detectives, setDetectives] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/detectives")
+    fetch("https://safe-chamber-06850.herokuapp.com/detectives")
       .then((res) => res.json())
       .then((data) => setDetectives(data));
   }, []);

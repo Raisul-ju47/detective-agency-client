@@ -9,7 +9,7 @@ const BookingList = () => {
   console.log(loggedInUser.email);
 
   useEffect(() => {
-    fetch("http://localhost:5000/queries" + loggedInUser.email)
+    fetch("https://safe-chamber-06850.herokuapp.com/queries" + loggedInUser.email)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);

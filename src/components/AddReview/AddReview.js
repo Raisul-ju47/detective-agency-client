@@ -17,7 +17,7 @@ const AddReview = () => {
     formData.append("company", info.company);
     formData.append("description", info.description);
 
-    fetch("http://localhost:5000/addReview", {
+    fetch("https://safe-chamber-06850.herokuapp.com/addReview", {
       method: "POST",
       body: formData,
     })

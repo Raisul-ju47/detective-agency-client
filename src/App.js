@@ -21,7 +21,7 @@ function App() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://safe-chamber-06850.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -41,9 +41,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/service/:id">
+          <PrivateRoute path="/service/:id">
             <Appointment />
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/dashboard/appointment">
             <Dashboard />
           </PrivateRoute>

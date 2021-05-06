@@ -10,7 +10,7 @@ const ManageService = () => {
   const deleteService = (event, id) => {
     console.log(event.target.parentNode.parentNode);
     console.log(id);
-    fetch(`http://localhost:5000/delete/${id}`, {
+    fetch(`https://safe-chamber-06850.herokuapp.com/delete/${id}`, {
         method: 'DELETE'
     })
     .then(res => res.json())

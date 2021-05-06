@@ -24,7 +24,7 @@ const AddDetective = () => {
     formData.append('name', info.name);
     formData.append('email', info.email);
 
-    fetch('http://localhost:5000/addADetective', {
+    fetch('https://safe-chamber-06850.herokuapp.com/addADetective', {
         method: 'POST',
         body: formData
     })

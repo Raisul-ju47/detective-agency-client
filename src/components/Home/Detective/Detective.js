@@ -17,7 +17,7 @@ const Detective = ({ detective }) => {
         <img
           style={{ height: "200px" }}
           className="img-fluid mb-3"
-          src={`http://localhost:5000/${detective.img}`}
+          src={`https://safe-chamber-06850.herokuapp.com/${detective.img}`}
           alt=""
         />
       )}
