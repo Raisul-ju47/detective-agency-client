@@ -18,4 +18,4 @@ Special Features: 1.Animation on Service Section.
                  3.Responsive Home page.
 
 
-============================================THANKS==========================================
+
