@@ -1,4 +1,4 @@
-========It takes time to show the images on the updatable sections (service, detective, testimonial) so please, Have patience!!=======
+**It takes time to show the images on the updatable sections (service, detective, testimonial) so please, Have patience!!**
 
 
 Website Name: "Detective Agency". Provides Special Detective and Investigation services.
@@ -15,9 +15,9 @@ Homepage has several sections such as=>
 
 Special Features =>
 
-  1.Animation on Service Section. 
-  2.Dark Theme overall the website.
-  3.Responsive Home page.
+  1.Animation on Service Section 
+  2.Dark Theme overall the website
+  3.Responsive Home page
 
 
 
